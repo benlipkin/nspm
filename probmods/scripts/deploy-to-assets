@@ -27,13 +27,16 @@ cp node_modules/bootstrap/dist/css/bootstrap.min.css assets/css
 cp node_modules/bootstrap/dist/css/bootstrap-theme.min.css assets/css
 cp node_modules/bootstrap/dist/css/bootstrap.min.css.map assets/css
 cp node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map assets/css
-cp node_modules/KaTeX/dist/katex.min.css assets/css
+#cp node_modules/KaTeX/dist/katex.min.css assets/css
+cp node_modules/katex/dist/katex.min.css assets/css
 cp node_modules/littlefoot/dist/littlefoot.css assets/css
-cp -r node_modules/KaTeX/dist/fonts assets/css
+#cp -r node_modules/KaTeX/dist/fonts assets/css
+cp -r node_modules/katex/dist/fonts assets/css
 
 cp node_modules/jquery/dist/jquery.min.js assets/js
 cp node_modules/bootstrap/dist/js/bootstrap.min.js assets/js
-cp node_modules/KaTeX/dist/katex.min.js assets/js
+#cp node_modules/KaTeX/dist/katex.min.js assets/js
+cp node_modules/katex/dist/katex.min.js assets/js
 cp node_modules/littlefoot/dist/littlefoot.min.js assets/js
 cp node_modules/paper/dist/paper-full.js assets/js
 

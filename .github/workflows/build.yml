@@ -1,0 +1,21 @@
+name:                  Build
+
+on:
+  push:
+    branches:          [main]
+  pull_request:
+    branches:          [main]
+
+jobs:
+  test_build:
+
+    runs-on:           ubuntu-latest
+
+    steps:
+      - name:          checkout repo
+        uses:          actions/checkout@v3.0.0
+        with:
+          fetch-depth: 1
+
+      - name:          build docker image
+        run:           make build
